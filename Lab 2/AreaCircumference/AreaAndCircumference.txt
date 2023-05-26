@@ -1,0 +1,20 @@
+Area_And_Circumference
+	DECLARE radius, pi, area, circumference
+	ASSIGN pi = 3.142, radius = 0
+	DOWHILE (radius<=0)
+		PRINT "Please enter radius in cm: "
+		READ radius
+		IF radius<=0 THEN
+			PRINT "Radius must be a positve number. Please enter again: "
+			CONTINUE
+		ELSE
+			BREAK
+		ENDIF
+	ENDO
+	circumference <- 2*pi*radius
+	area <- pi*r^2
+	PRINT "Circumference= ", circumference
+	PRINT "Area= ", area
+END
+
+

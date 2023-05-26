@@ -1,0 +1,15 @@
+Perimeter_Of_Rectangle
+	DECLARE length=0, width=0, perimeter
+	DOWHILE (length<=0 OR width<=0)
+		PRINT "Please enter length and width: ", length, width
+		READ length, width
+		IF length<=0 OR width<=0 THEN
+			PRINT "Please enter again:"
+			CONTINUE
+		ELSE
+			BREAK
+		ENDIF
+	ENDO
+	perimeter <- width*2 + length*2
+	PRINT "Perimeter= ", perimeter
+END

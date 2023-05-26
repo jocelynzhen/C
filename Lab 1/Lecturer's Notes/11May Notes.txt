@@ -1,0 +1,60 @@
+Pseudocode 
+Common terms:
+START / BEGIN / TASKNAME...END
+DECLARE
+ASSIGN / SET / INTIALIZE
+DISPLAY / PRINT / OUTPUT / WRITE / PROMPT/ ASK
+INPUT/READ / GET
+CALCULATE 
+IF ... ELSE IF ... ELSE ...ENDIF
+IF ... ENDIF
+IF ... ELSE ... ENDIF
+CASE OF ... ENDCASE 
+
+DOWHILE ... ENDDO
+FOR .... STEP ... NEXT 
+WHILE ... ENDWHILE 
+REPEAT ... UNTIL
+
+FUNCTION ... ENDFUNCTION
+OPEN FILE "..." FOR READING / WRITING
+CLOSE FILE "..."
+WRITE / READ CONTENT TO/FROM FILE "..." 
+
+
+ADD_TWO_NUMBERS 
+	DECLARE num1, num2, total
+	PRINT "Please enter 2 numbers:"
+	READ num1, num2
+	CALCULATE 
+		total = num1 + num2
+	PRINT "Total = ", total
+END
+
+BEGIN 
+	DECLARE num1, num2 and total AS Integer
+	Prompt the user for 2 values
+	READ num1, num2
+	total <- num1 + num2
+	PRINT "Total = ", total
+END
+
+01 START  
+02	DECLARE num1: Integer, num2: Integer, total 
+03	Prompt the user for 2 values
+04	INPUT num1, num2
+05	Assign (num1 + num2) into total
+06	PRINT "Total = ", total
+07 END
+
+BEGIN 
+	DECLARE num1, num2, diff
+	Prompt the user for 2 values
+	READ num1, num2
+	IF num1 = num2 THEN
+		diff <- num1 - num2
+	ELSE 
+		diff <- num2 - num1
+	ENDIF
+	PRINT "different = ", diff
+END
